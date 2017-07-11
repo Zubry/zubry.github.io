@@ -1,0 +1,59 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+h1, h2 {
+  margin: 0;
+}
+
+header {
+  height: 25vh;
+  color: rgba(43, 43, 43, .9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+	background: linear-gradient(135deg, #DDFFF7, #DDFFF7 60%, #FFA69E 60.1%, #FFA69E, #FFA69E 70%, #462255 70.1%, #462255, #462255 80%, #DDFFF7 80.1%);
+  box-shadow: inset 0px -8px 238px -77px rgba(70,34,85,1);
+}
+
+section#content {
+  background-color: #F5F5F5;
+  color: #2B2B2B;
+  padding: 10vh 10vw;
+}
+
+.project {
+  background-color: white;
+  padding: 1.5rem;
+  margin: 0.5rem;
+  position: relative;
+  box-shadow: 2px 2px 2px 0px rgba(70,70,70,0.5);
+}
+
+.project:nth-child(even) {
+  right: 2rem;
+  transform: rotate(0.5deg);
+}
+
+.project:nth-child(odd) {
+  left: 2rem;
+  transform: rotate(-0.5deg);
+}
+
+.project:nth-child(3n) {
+  border-bottom: 4px solid #FFA69E;
+}
+
+.project:nth-child(3n+1) {
+  border-bottom: 4px solid #AA4465;
+}
+
+.project:nth-child(3n+2) {
+  border-bottom: 4px solid #462255;
+}
